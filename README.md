@@ -1,1 +1,1 @@
-# Capgemini_Advacnced_Java
+# Capgemini_Java_Training_Program
