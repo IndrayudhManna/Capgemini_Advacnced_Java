@@ -291,4 +291,3 @@ Capgemini Day Wise Topics Covered Till Date
 ### Day 45 (Friday)
 - Started DevOps
 - Waterfall Model, Agile Model, DevOps
-- 
