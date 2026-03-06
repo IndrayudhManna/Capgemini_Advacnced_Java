@@ -1,0 +1,29 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=
+"http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+    <!-- Don't change this value -->
+    <persistence-unit name="pu">
+        <properties>
+            <!--  Don't change this value  -->
+            <property name="hibernate.archive.autodetection" value="class,hbm" />
+            <!--The driver class name"/-->						<!-- package name.Driver class -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            													<!-- api:vendor//url:port/database -->
+      		<property name="jakarta.persistence.jdbc.url"    value="jdbc:mysql://localhost:3306/hibernate?createDatabaseIfNotExist=true" />
+      		<property name="jakarta.persistence.jdbc.user"   value="root" />
+      		<property name="jakarta.persistence.jdbc.password" value="root" />
+            <!--connection pool properties"/-->
+            <property name="hibernate.c3p0.min_size" value="5" />
+            <property name="hibernate.c3p0.max_size" value="20" />
+            <property name="hibernate.c3p0.timeout" value="300" />
+            <property name="hibernate.c3p0.max_statements" value="50" />
+            <property name="hibernate.c3p0.idle_test_period" value="3000" />
+            <!--The dialect to use-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+            										<!-- create/update/ -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
