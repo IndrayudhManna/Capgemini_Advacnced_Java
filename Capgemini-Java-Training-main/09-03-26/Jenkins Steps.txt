@@ -1,0 +1,33 @@
+CI - Continuous Integration
+CD - Continuous Delivery
+CI + CD Both are called methodology
+
+Jenkins -> It's a Tool
+
+
+Item Creation in Jenkins 
+------------------------------------------------------------------
+
+Create Freestyle Project 
+
+Add Git repo link
+Select credentials
+
+Poll SCM
+-----------------------------------------------------------------------------------
+H/2 * * * *
+
+Change the branch from master to main (According to your repo)
+
+Add Build steps (execute windows batch command)
+----------------------------------------------------------
+cd src
+javac com/git2/pipe2.java
+java com.git2.pipe2
+
+
+
+To make pipeline
+Go to Project1 -> Post Build Steps -> Build Other Projects -> Trigger even if build fails -> write Project 2 in the box -> save
+
+Do the same for  Project 2 to connect 3. Make a chain like this.
