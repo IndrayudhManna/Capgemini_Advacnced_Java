@@ -291,3 +291,17 @@ Capgemini Day Wise Topics Covered Till Date
 ### Day 45 (Friday)
 - Started DevOps
 - Waterfall Model, Agile Model, DevOps
+
+## 07.03.2026
+### Day 46 (Saturday)
+- GenAI Online Class (Theory Class)
+- Version Control System (Theory)
+- Git | Github (Theory+Practical)
+- Weekly Assesment
+
+## 09.03.2026
+### Day 47 (Monday)
+- Jenkins Tutorial
+- CI/CD
+- Made Projects and understood the CI/CD Pipeline
+- Deployed and Build the Projects in Jenkins
