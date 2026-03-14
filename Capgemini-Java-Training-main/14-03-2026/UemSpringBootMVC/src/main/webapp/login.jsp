@@ -1,0 +1,187 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#89CFF0,#6DD5FA);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:350px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:10px;
+}
+
+input[type=text],
+input[type=password]{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+    transition:0.3s;
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+    border-color:#007BFF;
+    box-shadow:0 0 5px rgba(0,123,255,0.5);
+}
+
+.buttons{
+    text-align:center;
+}
+
+/* Login & Reset Buttons */
+
+input[type=submit],
+input[type=reset]{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+input[type=submit]{
+    background:#007BFF;
+    color:white;
+}
+
+input[type=reset]{
+    background:#e63946;
+    color:white;
+}
+
+input[type=submit]:hover{
+    background:#0056b3;
+    transform:scale(1.05);
+}
+
+input[type=reset]:hover{
+    background:#c1121f;
+    transform:scale(1.05);
+}
+
+/* Links Section */
+
+.links{
+    text-align:center;
+    margin-top:15px;
+}
+
+/* Common Button Style */
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:6px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+    color:white;
+}
+
+/* Sign Up Button */
+
+.signup{
+    background:#6f42c1;
+}
+
+.signup:hover{
+    background:#59339d;
+    transform:scale(1.05);
+}
+
+/* Forgot Password Button */
+
+.forgot{
+    background:#e63946;
+}
+
+.forgot:hover{
+    background:#117a8b;
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Login</h2>
+
+<form action="/login" method="post">
+
+<table border="1">
+
+<tr>
+<td>Username</td>
+<td><input type="text" name="username" placeholder="Enter username" required></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" name="password" placeholder="Enter password" required></td>
+</tr>
+
+<tr>
+<td colspan="2" class="buttons">
+<input type="submit" value="Login">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+<div class="links">
+
+<a href="/signup" class="btn signup">Sign-Up Now</a>
+
+<a href="/forgetpassword" class="btn forgot">Forgot Password</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
